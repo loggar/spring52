@@ -11,7 +11,7 @@ import com.loggar.config.beans.MyDatabaseSession;
 
 public class ConfigComposingImportTest {
 	@Test
-	public void myBean() {
+	public void myDatabaseSession() {
 		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
 		ctx.register(ConfigComposingImport.class);
 		ctx.refresh();

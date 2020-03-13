@@ -16,7 +16,7 @@ import org.springframework.core.env.PropertySource;
 
 public class ConfigComposingProfileTest {
 	@Test
-	public void myBean() {
+	public void basicDataSource() {
 		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
 
 		ConfigurableEnvironment env = ctx.getEnvironment();
