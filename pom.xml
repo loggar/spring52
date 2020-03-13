@@ -87,7 +87,7 @@
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
 			<version>1.2.3</version>
-			<scope>test</scope>
+			<!-- scope>test</scope -->
 		</dependency>
 		<!-- junit 5 -->
 		<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter -->
@@ -95,28 +95,28 @@
 			<groupId>org.junit.jupiter</groupId>
 			<artifactId>junit-jupiter</artifactId>
 			<version>5.6.0-RC1</version>
-			<scope>test</scope>
+			<!-- scope>test</scope -->
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.junit.platform/junit-platform-commons -->
 		<dependency>
 			<groupId>org.junit.platform</groupId>
 			<artifactId>junit-platform-commons</artifactId>
 			<version>1.6.0-RC1</version>
-			<scope>test</scope>
+			<!-- scope>test</scope -->
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.junit.platform/junit-platform-launcher -->
 		<dependency>
 			<groupId>org.junit.platform</groupId>
 			<artifactId>junit-platform-launcher</artifactId>
 			<version>1.6.0-RC1</version>
-			<scope>test</scope>
+			<!-- scope>test</scope -->
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.junit.platform/junit-platform-runner -->
 		<dependency>
 			<groupId>org.junit.platform</groupId>
 			<artifactId>junit-platform-runner</artifactId>
 			<version>1.6.0-RC1</version>
-			<scope>test</scope>
+			<!-- scope>test</scope -->
 		</dependency>
 		<!-- hamcrest -->
 		<!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest -->
@@ -124,14 +124,14 @@
 			<groupId>org.hamcrest</groupId>
 			<artifactId>hamcrest</artifactId>
 			<version>2.2</version>
-			<scope>test</scope>
+			<!-- scope>test</scope -->
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest-library -->
 		<dependency>
 			<groupId>org.hamcrest</groupId>
 			<artifactId>hamcrest-library</artifactId>
 			<version>2.2</version>
-			<scope>test</scope>
+			<!-- scope>test</scope -->
 		</dependency>
 		<!-- spring frameworks -->
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
@@ -146,5 +146,28 @@
 			<artifactId>spring-context</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
+		<!-- spring test -->
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-test -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${spring.version}</version>
+			<!-- scope>test</scope -->
+		</dependency>
+		<!-- javax -->
+		<!-- https://mvnrepository.com/artifact/javax.inject/javax.inject -->
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
+			<version>1</version>
+		</dependency>
+		<!-- dbcp -->
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-dbcp2 -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-dbcp2</artifactId>
+			<version>2.7.0</version>
+		</dependency>
+
 	</dependencies>
 </project>

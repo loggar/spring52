@@ -1,4 +1,4 @@
-package com.loggar.beans;
+package com.loggar.context.beans;
 
 import java.util.ArrayList;
 import java.util.List;

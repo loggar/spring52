@@ -1,4 +1,4 @@
-package com.loggar.beans;
+package com.loggar.context.beans;
 
 public class Course {
 	private String name;

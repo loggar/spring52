@@ -1,4 +1,4 @@
-package com.loggar.beans;
+package com.loggar.context.beans;
 
 public class Student {
 	private int no;

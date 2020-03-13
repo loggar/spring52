@@ -1,13 +1,13 @@
-package com.loggar.application.config;
+package com.loggar.config.annotation.bean;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.loggar.beans.MyBean;
-import com.loggar.beans.MyBeanChild;
+import com.loggar.config.beans.MyBean;
+import com.loggar.config.beans.MyBeanChild;
 
 @Configuration
-public class BeanConfigExample {
+public class ConfigAnnotationBean {
 	@Bean
 	public MyBean myBean() {
 		return new MyBeanChild();
