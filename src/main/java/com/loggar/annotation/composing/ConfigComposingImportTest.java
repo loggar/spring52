@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.loggar.config.beans.MyDatabaseSession;
+import com.loggar.annotation.beans.MyDatabaseSession;
 
 public class ConfigComposingImportTest {
 	@Test

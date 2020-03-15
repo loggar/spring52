@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ImportResource;
 
-import com.loggar.config.beans.MyDatabaseSession;
+import com.loggar.annotation.beans.MyDatabaseSession;
 
 @Configuration
 @ImportResource("classpath:database-config.xml")

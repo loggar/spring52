@@ -8,9 +8,9 @@ import org.springframework.beans.factory.BeanNotOfRequiredTypeException;
 import org.springframework.beans.factory.NoUniqueBeanDefinitionException;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.loggar.config.beans.Animal;
-import com.loggar.config.beans.Lion;
-import com.loggar.config.beans.Tiger;
+import com.loggar.annotation.beans.Animal;
+import com.loggar.annotation.beans.Lion;
+import com.loggar.annotation.beans.Tiger;
 
 public class AnnotationConfigGetBeanTest {
 	AnnotationConfigApplicationContext ctx;

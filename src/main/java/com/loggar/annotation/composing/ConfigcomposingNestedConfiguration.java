@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 
-import com.loggar.config.beans.MyDatabaseSession;
+import com.loggar.annotation.beans.MyDatabaseSession;
 
 @Configuration
 public class ConfigcomposingNestedConfiguration {

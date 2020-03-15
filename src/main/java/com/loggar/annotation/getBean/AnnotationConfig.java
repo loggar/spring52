@@ -4,8 +4,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 
-import com.loggar.config.beans.Lion;
-import com.loggar.config.beans.Tiger;
+import com.loggar.annotation.beans.Lion;
+import com.loggar.annotation.beans.Tiger;
 
 @Configuration
 public class AnnotationConfig {

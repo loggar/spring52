@@ -1,4 +1,4 @@
-package com.loggar.config.beans;
+package com.loggar.annotation.beans;
 
 public interface Animal {
 	String getName();

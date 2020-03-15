@@ -1,4 +1,4 @@
-package com.loggar.config.beans;
+package com.loggar.annotation.beans;
 
 public class Lion implements Animal {
 	String name;
