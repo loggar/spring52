@@ -16,7 +16,7 @@ import com.loggar.context.beans.Student;
 public class ClasspathXmlApplicationContextTest {
 	@Test
 	public void testBasicUsage() {
-		@SuppressWarnings("resource") ApplicationContext context = new ClassPathXmlApplicationContext("com/loggar/context/xml/classpathxmlapplicationcontext-example.xml");
+		@SuppressWarnings("resource") ApplicationContext context = new ClassPathXmlApplicationContext("com/loggar/context/classpathxml/classpathxmlapplicationcontext-example.xml");
 		Student student = (Student) context.getBean("student");
 		MatcherAssert.assertThat(student.getNo(), CoreMatchers.equalTo(15));
 		MatcherAssert.assertThat(student.getName(), CoreMatchers.equalTo("Tom"));
@@ -28,7 +28,7 @@ public class ClasspathXmlApplicationContextTest {
 
 	@Test
 	public void testRegisterShutdownHook() {
-		@SuppressWarnings("resource") ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("com/loggar/context/xml/classpathxmlapplicationcontext-example.xml");
+		@SuppressWarnings("resource") ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("com/loggar/context/classpathxml/classpathxmlapplicationcontext-example.xml");
 		context.registerShutdownHook();
 	}
 

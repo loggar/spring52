@@ -21,7 +21,7 @@ public class ClasspathXmlMessageSourceTest {
 
 	@Test
 	public void testInternationalization() {
-		@SuppressWarnings("resource") MessageSource resources = new ClassPathXmlApplicationContext("com/loggar/context/xml/classpathxmlapplicationcontext-internationalization.xml");
+		@SuppressWarnings("resource") MessageSource resources = new ClassPathXmlApplicationContext("com/loggar/context/classpathxml/classpathxmlapplicationcontext-internationalization.xml");
 
 		String enHello = resources.getMessage("hello", null, "Default", Locale.ENGLISH);
 		String enYou = resources.getMessage("you", null, Locale.ENGLISH);
@@ -40,7 +40,7 @@ public class ClasspathXmlMessageSourceTest {
 
 	@Test
 	public void testApplicationContextAware() {
-		@SuppressWarnings("resource") ApplicationContext context = new ClassPathXmlApplicationContext("com/loggar/context/xml/classpathxmlapplicationcontext-example.xml");
+		@SuppressWarnings("resource") ApplicationContext context = new ClassPathXmlApplicationContext("com/loggar/context/classpathxml/classpathxmlapplicationcontext-example.xml");
 		Teacher teacher = context.getBean("teacher", Teacher.class);
 		List<Course> courses = teacher.getCourses();
 		MatcherAssert.assertThat(courses.size(), CoreMatchers.equalTo(1));
