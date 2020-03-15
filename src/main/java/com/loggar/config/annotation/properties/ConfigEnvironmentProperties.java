@@ -11,7 +11,7 @@ import com.loggar.config.beans.MyBean;
 import com.loggar.config.beans.MyBeanChild;
 
 @Configuration
-@PropertySource("classpath:/env.inject.properties")
+@PropertySource("classpath:/com/loggar/config/annotation/properties/env.inject.properties")
 public class ConfigEnvironmentProperties {
 	@Inject Environment env;
 
