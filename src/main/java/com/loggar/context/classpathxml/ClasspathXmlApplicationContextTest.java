@@ -1,4 +1,4 @@
-package com.loggar.context.xml;
+package com.loggar.context.classpathxml;
 
 import org.hamcrest.CoreMatchers;
 import org.hamcrest.MatcherAssert;

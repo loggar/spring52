@@ -1,4 +1,4 @@
-package com.loggar.context.xml;
+package com.loggar.context.classpathxml;
 
 import java.util.List;
 import java.util.Locale;
