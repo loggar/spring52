@@ -1,4 +1,4 @@
-package com.loggar.resource.field;
+package com.loggar.resource.inject;
 
 import java.io.File;
 
@@ -13,7 +13,7 @@ import org.springframework.test.context.support.AnnotationConfigContextLoader;
 
 @ExtendWith(SpringExtension.class)
 @ContextConfiguration(loader = AnnotationConfigContextLoader.class, classes = ApplicationContextTestResourceNameType.class)
-public class FieldResourceInjectionIntegrationTest {
+public class ResourceInjectionFieldByNameTest {
 
 	@Resource(name = "namedFile") private File defaultFile;
 

@@ -1,4 +1,4 @@
-package com.loggar.resource.field;
+package com.loggar.resource.inject;
 
 import java.io.File;
 import java.net.URISyntaxException;
