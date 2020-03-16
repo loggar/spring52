@@ -2,7 +2,7 @@ package com.loggar.annotation.value.config;
 
 import org.springframework.beans.factory.annotation.Value;
 
-public class ValueDefault {
+public class ValueDefaults {
 	// Default Value
 	@Value("Default DBConfiguration") private String defaultName;
 	@Value("true") private boolean defaultBoolean;
