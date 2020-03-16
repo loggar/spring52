@@ -14,4 +14,13 @@ public class ComponentWithValueConfig {
 	public ComponentWithValue getComponentWithValue() {
 		return new ComponentWithValue();
 	}
+
+  /*
+	 * With Spring frameworks Context version 4 and below:
+	 * PropertySourcesPlaceHolderConfigurer Bean only required for @Value("{}") annotations. Remove this bean if you are not using @Value annotations for injecting properties.
+	 */
+	// @Bean
+	// public static PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer() {
+	// 	return new PropertySourcesPlaceholderConfigurer();
+	// }
 }
