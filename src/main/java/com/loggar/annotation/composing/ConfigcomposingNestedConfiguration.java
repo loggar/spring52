@@ -24,7 +24,7 @@ public class ConfigcomposingNestedConfiguration {
 		@Bean
 		DataSource dataSource() throws Exception {
 			Properties _props = new Properties();
-			Resource resource = new ClassPathResource("datasource.dbcp.dev.properties");
+			Resource resource = new ClassPathResource("datasource.dbcp.1.dev.properties");
 			InputStream _in = resource.getInputStream();
 			if (_in != null) {
 				_props.load(_in);

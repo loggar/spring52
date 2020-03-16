@@ -19,7 +19,7 @@ public class DatabaseConfigProfile {
 	@Profile("development")
 	public DataSource developmentDatabase() throws Exception {
 		Properties _props = new Properties();
-		Resource resource = new ClassPathResource("datasource.dbcp.dev.properties");
+		Resource resource = new ClassPathResource("datasource.dbcp.1.dev.properties");
 		InputStream _in = resource.getInputStream();
 		if (_in != null) {
 			_props.load(_in);
@@ -31,7 +31,7 @@ public class DatabaseConfigProfile {
 	@Profile("production")
 	public DataSource productionDatabase() throws Exception {
 		Properties _props = new Properties();
-		Resource resource = new ClassPathResource("datasource.dbcp.prod.properties");
+		Resource resource = new ClassPathResource("datasource.dbcp.1.prod.properties");
 		InputStream _in = resource.getInputStream();
 		if (_in != null) {
 			_props.load(_in);

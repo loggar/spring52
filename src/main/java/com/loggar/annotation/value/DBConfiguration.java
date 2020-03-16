@@ -1,4 +1,4 @@
-package com.loggar.annotation.value.ex;
+package com.loggar.annotation.value;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
 @Configuration
-@PropertySource("classpath:datasource.dbcp.dev.properties")
+@PropertySource("classpath:datasource.dbcp.1.dev.properties")
 @PropertySource(value = "classpath:root.properties", ignoreResourceNotFound = true)
 public class DBConfiguration {
 	@Value("Default DBConfiguration") private String defaultName;
