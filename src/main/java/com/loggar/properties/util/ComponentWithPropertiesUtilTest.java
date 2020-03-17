@@ -6,11 +6,11 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class ComponentBeanWithProperyTest {
+public class ComponentWithPropertiesUtilTest {
 	@Test
 	public void componentWithPropertyValue() {
 		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
-		ctx.register(BeanComponentPropertiesUtilConfig.class);
+		ctx.register(ComponentBeanPropertiesUtilConfig.class);
 		ctx.refresh();
 
 		ComponentBean componentBean = ctx.getBean("componentBean", ComponentBean.class);
@@ -25,7 +25,7 @@ public class ComponentBeanWithProperyTest {
 	@Test
 	public void mapWithPropertyValue() {
 		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
-		ctx.register(BeanMapPropertiesUtilConfig.class);
+		ctx.register(ComponentMapPropertiesUtilConfig.class);
 		ctx.refresh();
 
 		@SuppressWarnings("unchecked") Map<String, String> propMap = ctx.getBean("propMap", Map.class);

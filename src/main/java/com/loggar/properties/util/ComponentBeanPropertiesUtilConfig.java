@@ -6,7 +6,7 @@ import org.springframework.context.annotation.ImportResource;
 
 @Configuration
 @ImportResource("classpath:/com/loggar/properties/util/props.config.xml")
-public class BeanComponentPropertiesUtilConfig {
+public class ComponentBeanPropertiesUtilConfig {
 	@Bean(name = "componentBean")
 	public ComponentBean componentBean() {
 		return new ComponentBean();

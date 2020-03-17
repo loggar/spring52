@@ -10,7 +10,7 @@ import org.springframework.context.annotation.ImportResource;
 
 @Configuration
 @ImportResource("classpath:/com/loggar/properties/util/props.config.xml")
-public class BeanMapPropertiesUtilConfig {
+public class ComponentMapPropertiesUtilConfig {
 	private @Value("#{prop1['key1']}") String prop1Key1;
 	private @Value("#{prop1['key2']}") String prop1Key2;
 	private @Value("#{prop2['key1']}") String prop2Key1;

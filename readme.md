@@ -1,1 +1,1 @@
-# Spring Frameworks 5.0
+# Spring Frameworks 5.2
