@@ -10,7 +10,7 @@ public class ComponentWithValueConfigTest {
 		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
 		ctx.register(ComponentWithValueConfig.class);
 		ctx.refresh();
-		ComponentWithValue componentWithValue = ctx.getBean(ComponentWithValue.class);
+		ComponentValue componentWithValue = ctx.getBean(ComponentValue.class);
 		ctx.close();
 
 		System.out.println(componentWithValue.getProp1());

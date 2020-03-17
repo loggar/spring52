@@ -13,7 +13,7 @@ import org.springframework.test.context.support.AnnotationConfigContextLoader;
 @ContextConfiguration(loader = AnnotationConfigContextLoader.class, classes = ComponentWithValueConfig.class)
 public class ComponentWithValueSpringTest {
 	// autowired by type
-	@Autowired private ComponentWithValue componentWithValue;
+	@Autowired private ComponentValue componentWithValue;
 
 	@Test
 	public void componentWithValue() {

@@ -1,4 +1,4 @@
-package com.loggar.annotation.value.env;
+package com.loggar.annotation.value.types;
 
 import java.util.List;
 import java.util.Map;
@@ -6,8 +6,12 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 
+enum Designation {
+	MANAGER, DEVELOPER, TESTER;
+}
+
 @Configuration
-public class ValueDefaultsConfig {
+public class ValueTypesConfig {
 	// cp.user.active=true
 	@Value("${cp.user.active}") private Boolean isUserActive;
 	@Value("${cp.user.active:true}") private Boolean isUserActiveWithDefault;
@@ -30,4 +34,6 @@ public class ValueDefaultsConfig {
 	@Value("#{${cp.user.teamMates}}") private Map<Integer, String> teamMates;
 	@Value("#{${cp.user.teamMates: {100: 'Krishna', 200: 'Shiva'}}}") private Map<Integer, String> teamMatesWithDefault;
 
+	// cp.user.designation=DEVELOPER
+	@Value("${cp.user.designation}") protected Designation designation;
 }

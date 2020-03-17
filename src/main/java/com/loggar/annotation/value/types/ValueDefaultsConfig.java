@@ -1,10 +1,10 @@
-package com.loggar.annotation.value.env;
+package com.loggar.annotation.value.types;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class ValueTypesConfig {
+public class ValueDefaultsConfig {
 	// Default Value
 	@Value("Default Value") private String defaultName;
 	@Value("true") private boolean defaultBoolean;

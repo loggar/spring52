@@ -9,8 +9,8 @@ import org.springframework.context.annotation.PropertySource;
 public class ComponentWithValueConfig {
 
 	@Bean
-	public ComponentWithValue getComponentWithValue() {
-		return new ComponentWithValue();
+	public ComponentValue getComponentWithValue() {
+		return new ComponentValueFieldInjection();
 	}
 
   /*
