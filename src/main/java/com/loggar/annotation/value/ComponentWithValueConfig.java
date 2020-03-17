@@ -1,4 +1,4 @@
-package com.loggar.annotation.value.config;
+package com.loggar.annotation.value;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

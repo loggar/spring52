@@ -1,4 +1,4 @@
-package com.loggar.annotation.value.config;
+package com.loggar.annotation.value;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

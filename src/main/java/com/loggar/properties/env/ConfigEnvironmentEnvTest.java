@@ -1,4 +1,4 @@
-package com.loggar.annotation.properties;
+package com.loggar.properties.env;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -6,18 +6,19 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import com.loggar.annotation.beans.MyBean;
 
-public class ConfigEnvironmentPropertiesTest {
+public class ConfigEnvironmentEnvTest {
 	@Test
 	public void myBean() {
+		String envMyBeanName = "the name of myBean";
+		System.setProperty("mybean.name", envMyBeanName);
+
 		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
-		ctx.register(ConfigEnvironmentProperties.class);
+		ctx.register(ConfigEnvironmentEnv.class);
 		ctx.refresh();
 		MyBean myBean = ctx.getBean(MyBean.class);
 		ctx.close();
 
-		System.out.println(myBean.getName());
-
 		Assertions.assertNotNull(myBean);
-		Assertions.assertTrue("the name of myBean 2".contentEquals(myBean.getName()));
+		Assertions.assertTrue(envMyBeanName.contentEquals(myBean.getName()));
 	}
 }

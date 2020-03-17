@@ -1,4 +1,4 @@
-package com.loggar.annotation.value.config;
+package com.loggar.annotation.value;
 
 import java.sql.SQLException;
 

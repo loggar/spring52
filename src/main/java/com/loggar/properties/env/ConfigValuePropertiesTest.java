@@ -1,4 +1,4 @@
-package com.loggar.annotation.properties;
+package com.loggar.properties.env;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
