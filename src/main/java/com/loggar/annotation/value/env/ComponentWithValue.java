@@ -1,9 +1,7 @@
-package com.loggar.annotation.component;
+package com.loggar.annotation.value.env;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
 
-@Component
 public class ComponentWithValue {
 	@Value("${java.home}") String prop1;
 

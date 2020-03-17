@@ -1,4 +1,4 @@
-package com.loggar.annotation.value;
+package com.loggar.annotation.value.env;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -7,8 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.context.support.AnnotationConfigContextLoader;
-
-import com.loggar.annotation.component.ComponentWithValue;
 
 // @RunWith(SpringJUnit4ClassRunner.class)
 @ExtendWith(SpringExtension.class)

@@ -1,4 +1,4 @@
-package com.loggar.annotation.getBean;
+package com.loggar.annotation.bean;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;

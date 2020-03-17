@@ -1,4 +1,4 @@
-package com.loggar.annotation.getBean;
+package com.loggar.annotation.bean;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,4 +1,4 @@
-package com.loggar.annotation.component;
+package com.loggar.annotation.components;
 
 import org.springframework.stereotype.Component;
 

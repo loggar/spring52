@@ -1,10 +1,8 @@
-package com.loggar.annotation.value;
+package com.loggar.annotation.value.env;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
-import com.loggar.annotation.component.ComponentWithValue;
 
 public class ComponentWithValueConfigTest {
 	@Test

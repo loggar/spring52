@@ -1,10 +1,8 @@
-package com.loggar.annotation.value;
+package com.loggar.annotation.value.env;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
-
-import com.loggar.annotation.component.ComponentWithValue;
 
 @Configuration
 @PropertySource("classpath:datasource.dbcp.1.dev.properties")

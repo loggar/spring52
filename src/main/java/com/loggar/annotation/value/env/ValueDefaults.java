@@ -1,10 +1,10 @@
-package com.loggar.annotation.value;
+package com.loggar.annotation.value.env;
 
 import org.springframework.beans.factory.annotation.Value;
 
 public class ValueDefaults {
 	// Default Value
-	@Value("Default DBConfiguration") private String defaultName;
+	@Value("Default Value") private String defaultName;
 	@Value("true") private boolean defaultBoolean;
 	@Value("10") private int defaultInt;
 
