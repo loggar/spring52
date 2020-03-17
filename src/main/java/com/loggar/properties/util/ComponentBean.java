@@ -2,6 +2,7 @@ package com.loggar.properties.util;
 
 import org.springframework.beans.factory.annotation.Value;
 
+// @Component
 public class ComponentBean {
 	private @Value("#{prop1['key1']}") String prop1Key1;
 	private @Value("#{prop1['key2']}") String prop1Key2;
