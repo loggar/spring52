@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.loggar.annotation.bean.ConfigAnnotationBean;
 import com.loggar.annotation.beans.MyBean;
 
 public class ConfigAnnotationBeanTest {
