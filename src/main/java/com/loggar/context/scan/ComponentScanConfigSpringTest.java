@@ -1,4 +1,4 @@
-package com.loggar.test.context.scan;
+package com.loggar.context.scan;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -10,8 +10,8 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 // @RunWith(SpringJUnit4ClassRunner.class)
 @ExtendWith(SpringExtension.class)
-@ContextConfiguration(locations = { "classpath:/com/loggar/test/context/scan/component.scan.config.xml" })
-public class ComponentScanXmlSpringTest {
+@ContextConfiguration(classes = { ComponentScanConfig.class })
+public class ComponentScanConfigSpringTest {
 	@Autowired @Qualifier("ml") DataModelService ml;
 
 	@Test

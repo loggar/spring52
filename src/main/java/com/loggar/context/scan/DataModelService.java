@@ -1,4 +1,4 @@
-package com.loggar.test.context.scan;
+package com.loggar.context.scan;
 
 public interface DataModelService {
 	boolean isValid(String input);

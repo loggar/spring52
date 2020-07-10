@@ -1,4 +1,4 @@
-package com.loggar.test.context.scan;
+package com.loggar.context.scan;
 
 import org.springframework.stereotype.Service;
 
