@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @RequestMapping(value = "/html")
-public class HtmlController {
+public class HtmlViewController {
 	private static String readLineByLine(String filePath) {
 		StringBuilder contentBuilder = new StringBuilder();
 
