@@ -5,7 +5,6 @@ import java.util.Properties;
 
 import javax.sql.DataSource;
 
-import org.apache.commons.dbcp2.BasicDataSource;
 import org.apache.commons.dbcp2.BasicDataSourceFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -22,6 +21,6 @@ public class DatabaseConfig {
 		if (_in != null) {
 			_props.load(_in);
 		}
-		return (BasicDataSource) BasicDataSourceFactory.createDataSource(_props);
+		return BasicDataSourceFactory.createDataSource(_props);
 	}
 }
